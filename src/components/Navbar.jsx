@@ -18,13 +18,13 @@ const Navbar = () => {
 
 // function checks whether user login or not if yes then navigates to profile page
   const profileHandler=()=>{
-    if(Object.keys(context).length>0){
+    if(Object.keys(context.login).length>0){
       navigate('/profile')
     }
   }
 // function checks whether user login or not if yes then navigates to settings page
   const settingsHandler=()=>{
-    if(Object.keys(context).length>0){
+    if(Object.keys(context.login).length>0){
       navigate('/settings')
     }
   }

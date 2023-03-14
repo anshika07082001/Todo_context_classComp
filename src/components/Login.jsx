@@ -26,8 +26,9 @@ const Login = (props) => {
 
   const loginHandler = (e) => {
     e.preventDefault();
-    let cond = (ele) => ele.email === loginInps[0].value;
+    let cond = (ele) => ele.email === loginInps[0].value && ele.pwd===loginInps[1].value;
     let user = props.sign.find(cond);
+    console.log(user)
     if (user === undefined) {
       alert("User Not found");
     } else {
